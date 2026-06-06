@@ -19,7 +19,7 @@ jobs:
           password: ${{ secrets.DOCKER_PASSWORD }}
 
       - name: Build image
-        run: docker build -t amit9693/github-actions-docker:v1 ./github-actions-docker
+        run: docker build -t amit9693/github-actions-docker:v1 .
 
       - name: Push image
         run: docker push amit9693/github-actions-docker:v1
